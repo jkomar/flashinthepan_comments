@@ -1,0 +1,22 @@
+comments:
+  allowedFields: ["name", "email", "website", "comment"]
+  branch: "master"
+  commitMessage: "New comment in {options.slug}"
+  filename: "comment-{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"
+  moderation: true
+  name: "Flashinthepan"
+  path: "{options.slug}"
+  requiredFields: ["name", "email", "comment"]
+  transforms:
+    email: md5
+  reCaptcha:
+    enabled: true
+    siteKey: "6Lcau78dAAAAANUIcn6UdiWhNj2WUAA7P3NKm56L"
+    secret: "Lt5G+MDmui05WR38hdfplle0ls21ukoOpxiGFszsRq1RnT5QGvko221i62JmnMCzFeQyUt9XNG53GF5RnBhWCHY8bM8dG25Tk1vLck6ci8e98RuNMJyxCLjMNk1nPfLBm7oqqqgxi8J7N6Po817wBn96pceefWCYR5CfkYya3Gxmqz29sGu3uUjSynskc3v6jqk4q3Hbl8r6LLzj4uhaMrXJ7FBVZwtoySNKf7Gs4v6bPVkGW5oQme4w569QD1amUK2WkcaO7VXSVKizwG6fkZA5wMXZd2JodNBCUfgk41LAhKwjz7JzLDTnwlUnXqSS5y28UJsm2to4coDvuhXr+w=="
+	
